@@ -1,15 +1,17 @@
 /*
- * OOPS Banner App - UC3
- * 
+ * OOPS Banner App - UC4
+ *
  * Goal:
- * Render "OOPS" in banner format using String.join()
- * instead of + operator for better memory efficiency.
- * 
+ * Store banner lines inside a String array
+ * and print them using a loop instead of
+ * multiple System.out.println() statements.
+ *
  * Key Concepts:
+ * - String Array
+ * - Array Creation & Population
  * - String.join()
- * - String Immutability
- * - Memory Efficiency
- * - Refactoring
+ * - Enhanced For Loop
+ * - Code Modularity
  */
 
 public class OOPSBannerApp {
@@ -17,16 +19,23 @@ public class OOPSBannerApp {
     public static void main(String[] args) {
 
         // Display Title
-        System.out.println("OOPS Banner App - UC3\n");
+        System.out.println("OOPS Banner App - UC4\n");
 
         /*
-         * Each letter (O, O, P, S) is represented in 7-line format.
-         * Each line is constructed using String.join(" ", ...)
-         * to avoid using + operator for concatenation.
+         * Step 1: Create a String array to store
+         * all 7 lines of the OOPS banner.
+         */
+        String[] banner = new String[7];
+
+        /*
+         * Step 2: Populate each array element
+         * using String.join() instead of + operator.
+         * Each line represents:
+         * O  O  P  S
          */
 
-        // Line 1 of O O P S
-        String line1 = String.join(" ",
+        // Line 1
+        banner[0] = String.join(" ",
                 "  *****  ",   // O
                 "  *****  ",   // O
                 "  ****** ",   // P
@@ -34,60 +43,60 @@ public class OOPSBannerApp {
         );
 
         // Line 2
-        String line2 = String.join(" ",
-                " **     **",  // O
-                " **     **",  // O
-                " **     **",  // P
-                " **     **"   // S
+        banner[1] = String.join(" ",
+                " **     **",
+                " **     **",
+                " **     **",
+                " **     **"
         );
 
         // Line 3
-        String line3 = String.join(" ",
-                " **     **",  // O
-                " **     **",  // O
-                " **     **",  // P
-                " **      "    // S
+        banner[2] = String.join(" ",
+                " **     **",
+                " **     **",
+                " **     **",
+                " **      "
         );
 
         // Line 4
-        String line4 = String.join(" ",
-                " **     **",  // O
-                " **     **",  // O
-                " ******  ",   // P
-                "  *****  "    // S
+        banner[3] = String.join(" ",
+                " **     **",
+                " **     **",
+                " ******  ",
+                "  *****  "
         );
 
         // Line 5
-        String line5 = String.join(" ",
-                " **     **",  // O
-                " **     **",  // O
-                " **       ",  // P
-                "       ** "   // S
+        banner[4] = String.join(" ",
+                " **     **",
+                " **     **",
+                " **       ",
+                "       ** "
         );
 
         // Line 6
-        String line6 = String.join(" ",
-                " **     **",  // O
-                " **     **",  // O
-                " **       ",  // P
-                " **     **"   // S
+        banner[5] = String.join(" ",
+                " **     **",
+                " **     **",
+                " **       ",
+                " **     **"
         );
 
         // Line 7
-        String line7 = String.join(" ",
-                "  *****  ",   // O
-                "  *****  ",   // O
-                " **       ",  // P
-                "  *****  "    // S
+        banner[6] = String.join(" ",
+                "  *****  ",
+                "  *****  ",
+                " **       ",
+                "  *****  "
         );
 
-        // Printing all 7 lines to form the banner
-        System.out.println(line1);
-        System.out.println(line2);
-        System.out.println(line3);
-        System.out.println(line4);
-        System.out.println(line5);
-        System.out.println(line6);
-        System.out.println(line7);
+        /*
+         * Step 3: Use Enhanced For Loop
+         * to print each line of the banner.
+         * This removes repetitive print statements.
+         */
+        for (String line : banner) {
+            System.out.println(line);
+        }
     }
 }
