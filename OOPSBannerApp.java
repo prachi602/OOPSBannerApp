@@ -90,6 +90,7 @@ public class OOPSBannerApp {
                 "  *****  "
         );
 
+
         /*
          * Step 3: Use Enhanced For Loop
          * to print each line of the banner.
@@ -99,4 +100,3 @@ public class OOPSBannerApp {
             System.out.println(line);
         }
     }
-}
