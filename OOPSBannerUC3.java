@@ -12,7 +12,7 @@
  * - Refactoring
  */
 
-public class OOPSBannerApp {
+public class OOPSBannerUC3 {
 
     public static void main(String[] args) {
 
@@ -27,10 +27,10 @@ public class OOPSBannerApp {
 
         // Line 1 of O O P S
         String line1 = String.join(" ",
-                "  *****  ",   // O
-                "  *****  ",   // O
-                "  ****** ",   // P
-                "  ****** "    // S
+                "   *****  ",   // O
+                "   *****  ",   // O
+                "   ****** ",   // P
+                "   ****** "    // S
         );
 
         // Line 2
@@ -54,7 +54,7 @@ public class OOPSBannerApp {
                 " **     **",  // O
                 " **     **",  // O
                 " ******  ",   // P
-                "  *****  "    // S
+                "  ****** "    // S
         );
 
         // Line 5
@@ -75,10 +75,10 @@ public class OOPSBannerApp {
 
         // Line 7
         String line7 = String.join(" ",
-                "  *****  ",   // O
-                "  *****  ",   // O
+                "   *****  ",   // O
+                "   *****  ",   // O
                 " **       ",  // P
-                "  *****  "    // S
+                "  ******  "    // S
         );
 
         // Printing all 7 lines to form the banner
@@ -89,5 +89,5 @@ public class OOPSBannerApp {
         System.out.println(line5);
         System.out.println(line6);
         System.out.println(line7);
-}
+    }
 }
