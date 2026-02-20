@@ -1,0 +1,5 @@
+# Compiled Class File
+*.class
+
+### VS Code ###
+.vscode/
