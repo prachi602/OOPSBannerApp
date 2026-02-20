@@ -1,4 +1,3 @@
-
 /**
  * OOPSBannerApp UC2 – Banner Display Application
  * * This class demonstrates the creation of a visual banner displaying the word "OOPS"
@@ -36,6 +35,5 @@ public class OOPSBannerApp
         System.out.println("**     **" + "   " + "**     **" + "   " + " **     " + "   " + "      ** ");
         System.out.println(" **   ** " + "   " + " **   ** " + "   " + " **     " + "   " + " **   **");
         System.out.println("   ***   " + "   " + "   ***   " + "   " + " **     " + "   " + "  ***** ");
-
     }
 }
