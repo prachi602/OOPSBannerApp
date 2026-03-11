@@ -5,12 +5,12 @@
 public class Bannerusingstringjoin {
     public static void main(String[] args) {
         // Define each line of the banner using String.join()
-        System.out.println(String.join("  ", "  ***  ", "******", "******", "  ****"));
-        System.out.println(String.join("  ", "**   **", "**  **", "**  **", "**    "));
-        System.out.println(String.join("  ", "**   **", "**  **", "**  **", "**    "));
-        System.out.println(String.join("  ", "**   **", "******", "******", "******"));
-        System.out.println(String.join("  ", "**   **", "**    ", "**    ", "    **"));
-        System.out.println(String.join("  ", "**   **", "**    ", "**    ", "    **"));
-        System.out.println(String.join("  ", "  ***  " ,"**    ", "**    ", "******"));
+        System.out.println(String.join("  ", "  ***  ", "  ***  ", "******", "  ****"));
+        System.out.println(String.join("  ", "**   **", "**   **", "**  **", "**    "));
+        System.out.println(String.join("  ", "**   **", "**   **", "**  **", "**    "));
+        System.out.println(String.join("  ", "**   **", "**   **", "******", "******"));
+        System.out.println(String.join("  ", "**   **", "**   **", "**    ", "    **"));
+        System.out.println(String.join("  ", "**   **", "**   **", "**    ", "    **"));
+        System.out.println(String.join("  ", "  ***  " ,"  ***  ", "**    ", "******"));
     }
 }
